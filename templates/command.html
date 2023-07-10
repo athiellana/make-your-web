@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/styles/command.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="contact-wrapper">
+        <form class="form-horizontal" id="form-horizontal" method="post" action="/">
+            <h1 class="section-header">Please fill the form to make a purchase</h1>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone number</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="category">Cars</label>
+            <select id="category" name="category">
+                <option value="default">--Choose the model</option>
+                <option value="simply">Symply</option>
+                <option value="pix">Pix</option>
+                <option value="chroma">Chroma</option>
+            </select>
+
+            <label for="message">Message</label>
+            <textarea rows="10" id="message" name="message" required></textarea>
+
+            <button class="send-button" id="submit" type="submit">Send</button>
+            <button class="send-button" id="reset" type="reset">Reset</button>
+
+            <div class="advert-wrapper-nonActive">
+                <p>Do you want to receive our news ?</p>
+                <input type="radio" id="yes" name="news-question" value="yes" checked>
+                <label for="yes">Yes</label>
+                <input type="radio" id="no" name="news-question" value="no">
+                <label for="no">No</label>
+            </div>
+        </form>
+    </div>
+
+    <script src="../scripts/command.js"></script>
+</body>
+
+</html>
